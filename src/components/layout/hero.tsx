@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = React.useState({
@@ -70,7 +71,7 @@ const Hero = () => {
 
             <div className="space-x-4">
               <Button size="lg">Shop Now</Button>
-              <Button variant="outline" size="lg">Take Skin Quiz</Button>
+              <Link href="/quiz"><Button variant="outline" size="lg">Take Skin Quiz</Button></Link>
             </div>
           </div>
 
