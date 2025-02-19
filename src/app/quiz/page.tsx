@@ -119,8 +119,10 @@ export default function QuizPage() {
   const [quizHistory, setQuizHistory] = React.useState<QuizResult[]>([]);
   const { addItem } = useCart();
 
-  const progress = (currentStep / quizQuestions.length) * 100;
   const currentQuestion = quizQuestions[currentStep];
+  const progress = currentStep === quizQuestions.length - 1 && answers[currentQuestion.id]
+    ? 100
+    : (currentStep / quizQuestions.length) * 100;
 
   const handleAnswer = (value: string) => {
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: value }));

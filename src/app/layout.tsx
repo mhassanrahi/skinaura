@@ -7,7 +7,7 @@ import { CartProvider } from '@/contexts/cart-context'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'SkinAura - Dermatologically Approved Skincare',
+  title: 'SkinEra - Dermatologically Approved Skincare',
   description: 'Shop dermatologically approved skincare and hair care products.',
 }
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <CartProvider>
           <div className="min-h-screen flex flex-col">
             <Navbar />

@@ -112,7 +112,7 @@ export function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
 
   return (
     <Sheet open={isOpen} onOpenChange={() => onClose()}>
-      <SheetContent side="top" className="h-screen border-none">
+      <SheetContent side="top" className="h-screen border-none" title="Search Products">
         <div className="container mx-auto py-8 px-4">
           {/* Search Input */}
           <div className="relative mb-8">

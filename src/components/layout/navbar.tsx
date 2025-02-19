@@ -40,7 +40,7 @@ export function Navbar() {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="left" className="w-[300px] sm:w-[400px]" title="Navigation Menu">
                 <nav className="flex flex-col gap-4">
                   <DropdownMenu>
                     <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 hover:bg-accent rounded-md">
@@ -73,7 +73,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold tracking-tight hover:text-primary transition-colors">
-            SkinAura
+            SkinEra
             </Link>
           </div>
 

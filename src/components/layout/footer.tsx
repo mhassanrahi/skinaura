@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">SkinAura</h3>
+            <h3 className="text-lg font-semibold mb-4">SkinEra</h3>
             <p className="text-sm text-gray-600">
               Dermatologically approved skincare and hair care products.
             </p>
