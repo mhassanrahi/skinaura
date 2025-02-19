@@ -255,7 +255,7 @@ export default function QuizPage() {
                 <div className="mt-8">
                   <h3 className="text-xl font-semibold mb-4">Previous Quiz Results</h3>
                   <div className="space-y-4">
-                    {quizHistory.slice(1).map((result, index) => (
+                    {quizHistory.slice(1).map((result) => (
                       <div key={result.date} className="bg-gray-50 rounded-lg p-4">
                         <p className="text-sm text-gray-500 mb-2">
                           {new Date(result.date).toLocaleDateString()}

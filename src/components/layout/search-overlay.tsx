@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from 'react';
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Search, X } from 'lucide-react';
 import Image from 'next/image';
@@ -21,13 +21,6 @@ interface Product {
   image: string;
   href: string;
 }
-
-const recentSearches = [
-  'Vitamin C Serum',
-  'Moisturizer',
-  'Sunscreen SPF 50',
-  'Acne Treatment'
-];
 
 const trendingProducts: Product[] = [
   { 

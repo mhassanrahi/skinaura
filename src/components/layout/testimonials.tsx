@@ -1,6 +1,7 @@
 "use strict";
 
 import * as React from "react";
+import Image from "next/image";
 
 interface Testimonial {
   id: string;
@@ -53,10 +54,12 @@ const Testimonials = () => {
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center text-xl font-bold text-gray-500">
                   {testimonial.image ? (
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="h-full w-full rounded-full object-cover"
+                      width={48}
+                      height={48}
                     />
                   ) : (
                     testimonial.name.charAt(0)
